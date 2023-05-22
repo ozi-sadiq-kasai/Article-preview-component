@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
-  <main id="card">
+  <div id="card">
     <div id="image">
       <img src="images/drawers.jpg" alt="image">
     </div>
@@ -24,13 +24,17 @@
         to help you make any room feel complete.
       </p>
       <div id="avatar">
-        <img src="images/avatar-michelle.jpg" alt="avatar">
-        <h3>Michelle Appleton</h3>
-        <p>28 Jun 2020</p>
-        <span>Share</span>
+        <div id="name">
+          <img src="images/avatar-michelle.jpg" alt="avatar">
+          <div>
+          <h3>Michelle Appleton</h3>
+          <p>28 Jun 2020</p>
+          </div>
+        </div>
+        <div id="icon">Share</div>
       </div>
-    </div>  
-  </main>  
+    </div> 
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
