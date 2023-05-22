@@ -32,13 +32,12 @@ body{
 #image img{
   width:100%;
   height:100%;
-  object-fit:cover;
   border-radius: 10px 0 0 10px;
   vertical-align: top;
 }
 
 #info{
-  padding: 30px;
+  padding: 30px 50px 20px 40px;
 }
 
 #info h1{
@@ -99,14 +98,24 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #000;
-  width:40px;
-  height:40px;
+  border: 1px solid hsl(210, 46%, 95%);
+  width:30px;
+  height:30px;
+  border-radius: 50%; 
+  background-color: hsl(210, 46%, 95%); 
+transition: 2s;
 }
-#icon img{
+
+#icon svg{
   display: block;
   margin: 0 auto;
-  width: 10px;
-  height: 10px;
-  
+  width: 13px;
+  height: 13px;
+  color: hsl(217, 19%, 35%);
+}
+ #icon:active{
+  background-color:hsl(214, 17%, 51%) ;
+}
+#icon svg:active{
+  color: white;
 }
