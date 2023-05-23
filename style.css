@@ -53,6 +53,7 @@ body{
   color:  hsl(212, 23%, 69%);
   margin: 10px 0 0 0;
   font-weight: 500;
+
 }
 
 
@@ -103,7 +104,10 @@ body{
   height:30px;
   border-radius: 50%; 
   background-color: hsl(210, 46%, 95%); 
-transition: 2s;
+  position: relative;
+}
+#icon:active{
+  background-color:hsl(214, 17%, 51%) ;
 }
 
 #icon svg{
@@ -113,9 +117,47 @@ transition: 2s;
   height: 13px;
   color: hsl(217, 19%, 35%);
 }
- #icon:active{
-  background-color:hsl(214, 17%, 51%) ;
-}
+ 
 #icon svg:active{
   color: white;
+}
+
+#pop-up{
+  width: 20%;
+  height: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(217, 19%, 35%);
+  position:absolute;
+  right:9.7%;
+  bottom: 41%;
+  border-radius: 15px;
+  
+}
+#pop-up::after{
+  content: '';
+  background-color: hsl(217, 19%, 35%);
+  width: 20px;
+  height: 29px;
+  position: absolute;
+  top:70%;
+  right: 47%;
+  transform: rotate(49deg)
+}
+/* #pop-up:active{
+  visibility: hidden;
+} */
+
+#pop-up span{
+  display: inline-block;
+  color: hsl(212, 23%, 69%);
+  font-size: 0.3;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#chat{
+  width:50%;
+  height:5%;
 }
